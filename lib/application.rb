@@ -24,7 +24,7 @@ class Application
       @game.is_going?
       showing_board
     end
-    puts "end"
+    puts "--- END OF THE GAME ---"
     restarting_app
   end
 

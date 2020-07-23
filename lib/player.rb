@@ -11,7 +11,7 @@ class Player
 
   def player_name
     
-    print ">"
+    print " >"
     return gets.chomp
 	end
 

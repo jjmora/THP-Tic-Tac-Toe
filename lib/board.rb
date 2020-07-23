@@ -56,7 +56,7 @@ class Board
       when boardcases_hash['A3'] == boardcases_hash['B2'] && boardcases_hash['A3'] == boardcases_hash['C1'] && boardcases_hash['C1'] != " "
         puts "You Win"
     else
-      puts 'Go on'
+      puts 'Keep going !'
       false
     end
   end
