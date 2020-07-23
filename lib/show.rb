@@ -48,6 +48,14 @@ When all 9 squares are full, the game is over.
     puts ""
   end
 
+  def show_end_menu
+    puts "You have finished the game !!!"
+    puts "What would you like to do now ?"
+    puts " > A - I loved it, i will like to play again !!!"
+    puts " > X - It's too funny for me, I need some rest. Please exit the game"
+    selection = gets.chomp
+    return selection
+  end
 end
 
 #binding.pry

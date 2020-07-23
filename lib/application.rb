@@ -24,6 +24,8 @@ class Application
       @game.is_going?
       showing_board
     end
+    puts "end"
+    restarting_app
   end
 
   def showing_board
@@ -40,6 +42,16 @@ class Application
 
   def showing_presentation_menu
     @board_to_show.presentation_menu
+  end
+
+  def restarting_app
+    selection = @board_to_show.show_end_menu
+    if selection == "A" 
+      puts "Keep playing" 
+      initialize
+    else 
+      puts "See you soon"
+    end
   end
 
 end
